@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Places</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <body>
+        <div class="hero">
+            <div class="background">
+                <img id="background-img" src="./Media/DALLúE 2024-04-27 21.34.03 - A visually striking hero image for a health data analysis website 1.png">
+                <div class="overlay"></div>
+            </div>
+            <h1 id="title">CDC Places</h1>
+            <h3 id="subtitle">Unlocking Health Insights: 
+                Analyzing Indiana and Kentucky CDC PLACES Data for Informed Public Health Interventions</h3>
+        </div>
+
+        <H3 id="intro">Project Introduction</H3>
+        <div id="intro-content">
+            <p id="intropara">
+                In this project, our objective is to identify outliers and analyze how health trends vary over time across different geographic areas, such as counties, places, census tracts, and ZIP Code Tabulation Areas (ZCTAs). By focusing on a detailed analysis of health trends across various geographic scales—from counties to ZIP Code Tabulation Areas (ZCTAs)—this initiative aims to provide actionable insights for improving community health outcomes.
+            </p>
+            <p id="intropara">
+                Our analysis begins with a comprehensive acquisition of relevant health data from the CDC PLACES database, focusing primarily on Indiana. This data, representing a range of health metrics such as disease prevalence and access to healthcare, is meticulously cleaned and prepared to ensure accuracy and reliability in our findings.
+            </p>
+            <p id="intropara">
+                The project leverages advanced statistical and geospatial analysis methods to explore and illustrate the complex relationships between health outcomes and demographic factors. This approach not only highlights current health conditions but also helps predict future health trends, providing a crucial tool for policymakers and public health officials.
+            </p>
+        </div>
+        
+        
+
+        <!-- Project Methodology Section -->
+<div id="methodology">
+    <h3 id="methodtitle">Project Methodology:</h3>
+    <p id="projectmethodtext">Our methodology encompasses several key stages:</p>
+
+    <div class="methodology-container">
+        <!-- Data Acquisition and Preparation -->
+        <div class="methodology-step">
+            <img src="./Media/Rectangle 13.png" alt="Data Acquisition and Preparation">
+           
+        </div>
+
+        <!-- Exploratory and Statistical Analysis -->
+        <div class="methodology-step">
+            <img src="./Media/Frame 7.png" alt="Exploratory and Statistical Analysis">
+         
+        </div>
+
+        <!-- Geospatial Visualization -->
+        <div class="methodology-step">
+            <img src="./Media/Frame 8.png" alt="Geospatial Visualization">
+          
+        </div>
+    </div>
+</div>
+
+<h3 id="workflowtitle">Workflow:</h3>
+<img id="workflow" src="./Media/Workflow.png">
+
+<h3 id="results">Results:</h3>
+<p id="resultstext">Our findings are presented through a series of detailed visualizations, each highlighting different aspects of public health in Indiana and Kentucky:</p>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <iframe id="chart1" width="70%" height="630" frameborder="0"
+        src="https://observablehq.com/embed/2e3fe424820befd2?cells=viewof+animatedBarChart">
+    </iframe>
+    
+    <div style="width: 30%; padding-right: 100px; padding-bottom: 150px ; margin-left: -100px;">
+        <ol>
+            <li><strong>Data Sorting:</strong> Code likely sorts counties by population to identify top 10.</li>
+            <li><strong>Trace Assignment:</strong> Each bar is assigned a separate trace, unusual for similar data.</li>
+            <li><strong>Data Mapping:</strong> Maps county names to y-axis and populations to x-axis values.</li>
+            <li><strong>Dynamic Data Fetching:</strong> Pulls population data dynamically, perhaps from an external source.</li>
+            <li><strong>Interactive Elements:</strong> Potentially interactive, allowing for detailed views on hover.</li>
+        </ol>
+    </div>
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <iframe id="chart1" width="70%" height="630" frameborder="0"
+  src="https://observablehq.com/embed/2e3fe424820befd2?cells=viewof+healthconditionBarChart"></iframe>
+  <div style="width: 30%; padding-right: 100px; padding-bottom: 150px ; margin-left: -100px;">
+    <ol>
+    <li>Interactive Bar Chart: Visualizes top counties by a selected health condition.</li>
+    <li>Dropdown for Condition Selection: Allows filtering by different health metrics.</li>
+    <li>Dynamic Data Update: Chart updates based on selected health condition.</li>
+    <li>Color Coded: Each bar uses unique colors to distinguish between counties.</li>
+    <li>Hover Details: Shows precise values on hover, enhancing data readability.</li>
+</ol></div>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+
+  <iframe id="chart1" width="70%" height="577" frameborder="0"
+  src="https://observablehq.com/embed/2e3fe424820befd2?cells=viewof+scatterPlot"></iframe>
+  <div style="width: 30%; padding-right: 100px; padding-bottom: 150px ; margin-left: -100px;"><ol>
+    <li>Scatter Plot Visualization: Shows correlation between two identical health indicators.</li>
+    <li>Dual Dropdown Selection: Allows comparison of the same metric across different data sets.</li>
+    <li>Linear Relationship Display: Points align closely with a straight line, indicating strong correlation.</li>
+    <li>Interactive Elements: Users can select different indicators for comparison.</li>
+    <li>Clear Axis Labels: Each axis clearly labeled with the health indicator, enhancing understanding.</li>
+</ol>
+</div>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <iframe id="chart1" width="70%" height="602" frameborder="0"
+  src="https://observablehq.com/embed/2e3fe424820befd2?cells=viewof+countywisescatterPlot"></iframe>
+  <div style="width: 30%; padding-right: 100px; padding-bottom: 20px ; margin-left: -100px;"><ol>
+    <li>Comparison of Two Metrics: Visualizes the same health indicator (ACCESS2_CrudePrev) across two axes.</li>
+    <li>Identifies Outliers and Clusters: Helps to easily spot variations or consistencies in the data.</li>
+    <li>Interactive Tooltips: Hovering over points provides exact values for easier data interpretation.</li>
+    <li>Simple and Clean Layout: Ensures that the data presentation is straightforward and easy to understand.</li></ol>
+</div>
+</div>
+
+<div>
+  <div id="summ"><h3 id="summary">Summary:</h3>
+    <p id="summarytext">Through our rigorous analysis of the CDC PLACES data, we have identified key trends and patterns that underline the health challenges and disparities in Indiana and Kentucky. These insights are invaluable for developing targeted interventions aimed at improving health outcomes and promoting health equity across these states. Our project highlights the power of data-driven approaches in public health and sets the stage for ongoing improvements in health policy and practice.</p>
+  </div>
+</div>
+
+  
+<div class="footer">
+    <h2 id="meet">MEET THE</h2>
+    <h1 id="projectteam">Project Team</h1>
+  
+    <table border="1">
+      <tr>
+        <th><strong>Name</strong></th>
+        <th><strong>Role</strong></th>
+        <th><strong>Email</strong></th>
+      </tr>
+  
+      <tr>
+        
+        <td>Hasaranga Jayathilake Dilshan</td>
+        <td>Project Lead</td>
+        <td><a href="mailto:hdjayath@iu.edu">hdjayath@iu.edu</a></td>
+      </tr>
+  
+      <tr>
+        
+        <td>Pericherla Supraja</td>
+        <td>Project Lead</td>
+        <td><a href="mailto:sperich@iu.edu">sperich@iu.edu</a></td>
+      </tr>
+      <tr>
+        
+        <td>Jay Colbert</td>
+        <td>Project Advisor</td>
+        <td><a href="mailto:jtcolber@iu.edu">jtcolber@iu.edu</a></td>
+      </tr>
+</tr>
+    <td>Vahini Matlakunta</td>
+    <td>Project Manager</td>
+    <td><a href="mailto:vmatlaku@iu.edu">vmatlaku@iu.edu</a></td>
+  </tr>
+      <tr>
+        
+        <td>Deepak Shersingh Rajput</td>
+        <td>Team Member</td>
+        <td><a href="mailto:drajput@iu.edu">drajput@iu.edu</a></td>
+      </tr>
+    
+        
+      <!-- ... other team members ... -->
+      <tr>
+        <td>Oam Chandra Laasya Tummala</td>
+        <td>Team Member</td>
+        <td><a href="otummala@iu.edu">otummala@iu.edu</a></td>
+      </tr>
+      <tr>
+        <td>Soumya Shanigarapu</td>
+        <td>Team Member</td>
+        <td><a href="mailto:sshaniga@iu.edu"<>sshaniga@iu.edu</a></td>
+      </tr>
+      <tr>
+        <td>Ahteshamuddin Mohammed</td>
+        <td>Team Member</td>
+        <td><a href="mailto:mohamah@iu.edu"<>mohamah@iu.edu</a></td>
+      </tr>
+      <tr>
+        <td>Nasiruddin Khazi</td>
+        <td>Team Member</td>
+        <td><a href="mailto:naskhazi@iu.edu"<>naskhazi@iu.edu</a></td>
+      </tr>
+      <tr>
+        <td>Saksham Rajput</td>
+        <td>Web Developer</td>
+        <td><a href="mailto:sarajput@iu.edu">sarajput@iu.edu</a></td>
+      </tr>
+    </table>
+  
+    <div class="source-code">
+      
+        <p>Source Code</p>
+            <p>Our project's complete analysis and visualization code is available on <a href="https://github.iu.edu/login?return_to=https%3A%2F%2Fgithub.iu.edu%2Fpolis-comet-lab%2Fcdc_places_data">Github</a>.</p>
+    
+      
+    </div>
+  </div>
+</body>
+</html>
